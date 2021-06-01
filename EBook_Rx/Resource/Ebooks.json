@@ -1,0 +1,133 @@
+{
+  "categories": [
+    {
+      "id": "TT_NG",
+      "title": "Tiểu thuyết nước ngoài",
+      "books": [
+        {
+          "id": 1,
+          "title": "Người Dublin - James Joyce (1914)",
+          "author": "Jame Joyce",
+          "description": "Tập truyện là những trải nghiệm của James Joyce trong bối cảnh đó, và có thể nói, nó làm nên nền tảng cho toàn bộ văn chương của ông, là bối cảnh cho các tác phẩm ông viết sau này. Người Dublin là những bí ẩn, những khoảng tối nằm sâu trong tâm hồn con người trong cái xã hội tê liệt, tu đọng, dối trá, đói khổ, tối tăm và bế tắc của Dublin. Cách viết Người Dublin khác hẳn lối kể truyện truyền thống. Tác giả chỉ kể lại, một cách chậm rãi, kiệm lời, còn để người đọc tự suy ngẫm, phỏng đoán, kết luận. Không có cốt truyện rõ ràng. Không tiền khoáng hậu. Không có xung đột kịch tính. Là những khoảnh khắc bất ngờ, ngẫu nhiên, bình thường và lặng lẽ, là giây phút mà tính cách bên trong của con người bỗng biểu lộ qua những chi tiết sinh hoạt thường ngày chân thật. Joyce gọi đó là 'hiển lộ' - epiphany.",
+          "pages": "152",
+          "pdf_url": "https://docs.google.com/uc?id=0B3fq_8MMSN0YWXk2NUlha0l4Sm8",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Joyce_-_Dubliners%2C_1914_-_3690390_F.jpg/200px-Joyce_-_Dubliners%2C_1914_-_3690390_F.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Một Chỗ Trong Đời",
+          "author": "Annie Ernaux",
+          "description": "Một người cha không bao giờ bước chân vào viện bảo tàng, chỉ đọc báo địa phương, không dùng gì khác ngoài con dao Opinel của riêng mình để ăn. Một người cha xuất thân nông dân rồi trở thành công nhân và cuối cùng là chủ một tiệm cà phê kiêm cửa hàng tạp phẩm. Một người cha luôn lo lắng bị nhầm “vị trí”. Cũng người cha ấy lấy làm tự hào về cô con gái nhờ được học hành tử tế mà đã đặt chân được vào giới tiểu tư sản. Nhưng đằng sau đó là khoảng cách, là những đớn đau, giằn vặt giữa cha và con. Một chỗ trong đời là câu chuyện về cuộc đời người cha ấy, được kể lại dưới ngòi bút của cô con gái, một cách lạnh lùng nhất có thể, với lối viết hờ hững, không cảm xúc, như những gì xảy đến tự nhiên. Chính lối viết tưởng như giản dị ấy đã mang lại cho Annie Ernaux giải Renaudot năm 1984.",
+          "pages": "98",
+          "pdf_url": "https://docs.google.com/uc?id=1CEAHMm-MJmY__zVZBpmpGuz6hk7w2Dyh",
+          "thumbnail": "https://www.dtv-ebook.com/images/files_2/2019/mot-cho-trong-doi-annie-ernaux.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Núi Đồi và Thảo Nguyên",
+          "author": "Tchinguiz Aitmatov",
+          "description": "Giamilia - Truyện Núi Đồi Và Thảo Nguyên là những câu chuyện về con người, núi đồi thảo nguyên của đất nước Kyrgystan. Những con người nơi làng mạc mộc mạc, giản dị, tâm hồn, tình cảm trong sáng, những mối tình xúc động tâm can quyện với những núi đồi thảo nguyên bát ngát vẽ nên những bức tranh tổng hòa đặc sắc, bức tranh của tâm hồn. Giamilia - Truyện Núi Đồi Và Thảo Nguyên gồm 4 truyện: Giamilia, Cây phong non trùm khăn đỏ, Mắt lạc đà, Người thầy đầu tiên. Với giọng văn mượt mà, những trang viết đẹp như thơ, tập sách là sự lồng ghép những người nông dân chân chất, những núi đồi, thảo nguyên thành những câu truyện giàu càm xúc và có sức thu hút đến cùng cực đối với người đọc.",
+          "pages": "447",
+          "pdf_url": "https://docs.google.com/uc?id=1XBS81hT7XCrIdkUgyUDlD0EUu8cRqsMr",
+          "thumbnail": "https://www.dtv-ebook.com/images/Cover/35219179110_9fff1ce35e_o.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Nanh Trắng",
+          "author": "Jack London",
+          "description": "Cuối thế kỷ XIX tại Canada, con người đổ xô đi tìm vàng tại những vùng lạnh giá phương bắc. Được thừa hưởng tất cả những gì tinh túy nhất của sói bố Một mắt và mẹ Kiche, Nanh Trắng sinh ra như để trở thành một chiến binh sói đơn độc với bản năng sinh tồn dẻo dai đến kì lạ trong môi trường khắc nghiệt ấy.",
+          "pages": "312",
+          "pdf_url": "http://download1510.mediafire.com/rgmih1el5esg/k06wq05uybi170q/Nanh+Trang+-+Jack+London.epub",
+          "thumbnail": "https://www.dtv-ebook.com/images/truyen-online/ebook-nanh-trang-prc-pdf-epub.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Người Quét Dọn Tâm Hồn",
+          "author": "Hiroshe Kamata",
+          "description": "Người Quét Dọn Tâm Hồn là những ghi chép của Hiroshe Kamata, người đã có 15 năm cống hiến cho việc giữ sạch công viên giải trí Disneyland Nhật Bản. Vì điều này mà những diễn biến trong tập sách đều là câu chuyện có thật, xảy ra tại nơi được mệnh danh là vương quốc của những giấc mơ. Điểm thú vị là những nhân vật của Hiroshe Kamata đều đang ở những vị trí khá thấp. Đó là những người quét dọn, người giữ sạch Disneyland Nhật Bản, giữ cho những thứ đồ chơi trong công viên này long lanh để phục vụ du khách… Có người yêu thích, có người không yêu công việc họ đang làm. Cũng có người yêu thích, nhưng vẫn nhiều mặc cảm khi ở trong bộ đồng phục lao công, chiếc chổi trên tay... Nhưng, qua những tính cách thú vị tiềm ẩn ở mỗi nhân vật, người đọc sẽ khám phá ra ánh hào quang tỏa ra từ những con người thầm lặng, đang làm đẹp cho Disneyland.",
+          "pages": "136",
+          "pdf_url": "https://docs.google.com/uc?id=1Tyax23jMnAZ52r3op_pO6Iu1kRy3aM0J",
+          "thumbnail": "https://www.dtv-ebook.com/images/files_2/2021/042021/nguoi-quet-don-tam-hon.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Sợi Chỉ Mỏng Manh",
+          "author": "Yakov Naumov & Aleksandr Yakovlev",
+          "description": "Andrey Mironov và các đồng sự khám phá ra kế hoạch gián điệp do một nhóm phản động âm mưu thực hiện, chúng đã duy trì hoạt động chống chính quyền Soviet từ những năm trước Chiến tranh vệ quốc vĩ đại. Câu chuyện còn kể về số phận bi thảm của cô gái Olga Konnileva bị ép buộc hoạt động cùng nhóm phản động, rồi cô bị thủ tiêu khi kế hoạch có nguy cơ bại lộ.",
+          "pages": "136",
+          "pdf_url": "https://docs.google.com/uc?id=0B3fq_8MMSN0YeGdfZzN3Q2l6eG8",
+          "thumbnail": "https://www.dtv-ebook.com/images/Cover/33929566995_c5d4da6170_z.jpg"
+        }
+      ]
+    },
+    {
+      "id": "TT_VN",
+      "title": "Tiểu thuyết Việt Nam",
+      "books": [
+        {
+          "id": 7,
+          "title": "Ván Bài Lật Ngửa",
+          "author": "Jame Joyce",
+          "description": "Tiểu thuyết kể về quãng đời hoạt động của nhân vật lịch sử có thật ngoài đời - anh hùng liệt sĩ Phạm Ngọc Thảo. Đọc “Ván bài lật ngửa”, chúng ta sẽ hình dung được một giai đoạn lịch sử đầy biến động của nước nhà từ năm 1954 đến cuối năm 1963, cũng như hiểu thêm về ngành tình báo Việt Nam. Những chiến sĩ tình báo làm nhiệm vụ một cách âm thầm. Họ lặng lẽ đóng góp một phần không nhỏ vào thắng lợi chung của dân tộc.",
+          "pages": "900 (bộ 6 tập)",
+          "pdf_url": "https://docs.google.com/uc?id=0B3fq_8MMSN0Yci1aa210dlE5Y2s",
+          "thumbnail": "https://www.dtv-ebook.com/images/Cover/33176559561_bbb570fa8b_o.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Đám Cưới Không Có Giấy Giá Thú",
+          "author": "Ma Văn Khángx",
+          "description": "Đám cưới không có giấy giá thú là đứa con tinh thần mới của nhà văn Ma Văn Kháng. Cũng như những tác phẩm trước, Đám cưới không có giấy giá thú nhận được nhiều sự quan tâm không chỉ từ độc giả mà còn từ những nhà văn lớn khác của Việt Nam.",
+          "pages": "480",
+          "pdf_url": "https://docs.google.com/uc?id=0B4xEjRl7MclVWE5QSjhBaUJRQjA",
+          "thumbnail": "https://www.dtv-ebook.com/images/Cover/36513586855_94463e1ea4_o.jpg"
+        },
+        {
+          "id": 108,
+          "title": "Thị Trấn Xe Bus Màu Xanh",
+          "author": "Nhiều tác giả",
+          "description": "Thị Trấn Xe Bus Màu Xanh là một nơi mà người ta sống cuộc sống thường nhật đầy rẫy nghịch cảnh giữa người với người. Đó có thể là câu chuyện về kẻ giàu, người nghèo. Đó có thể là câu chuyện vẫy vùng trong một hiện tại tuyệt vọng và vĩnh viễn tiếc nuối quá khứ đã qua. Đó cũng có thể sự cô đơn đến không lối thoát cho những ngày quẩn quanh.",
+          "pages": "245",
+          "pdf_url": "https://docs.google.com/uc?id=0B3fq_8MMSN0YMDEwQnRzZkItaHM",
+          "thumbnail": "https://www.dtv-ebook.com/images/Cover/36770045615_33c613b030_o.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Đừng Coi Ai Đó Là Cả Thế Giới",
+          "author": "Nhiều tác giả",
+          "description": "Đừng Coi Ai Đó Là Cả Thế Giới là một quyển sách nói về tình yêu ta dành cho một người. Trong tình yêu, dù có tha thiết bao nhiêu, mặn nồng và cuồng nhiệt bao nhiêu, cũng đừng coi ai đó là tất cả, bởi khi đó, bạn sẽ vô tình quên lãng chính bản thân mình, rồi vô tình bị lệ thuộc vào người khác. Tự mình trao cho họ cái quyền sinh quyền sát, quyền làm mình tổn thương.",
+          "pages": "187",
+          "pdf_url": "https://docs.google.com/uc?id=1M5zDSjbw1EUrotl6sqTcpBT4a1zcy6Sq",
+          "thumbnail": "https://www.dtv-ebook.com/images/files_2/2021/032021/dung-coi-ai-do-la-ca-the-gioi.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Tựa Lưng Vào Nỗi Nhớ",
+          "author": "Dương Hồng Phúc",
+          "description": "Ngẫu nhiên giữa Sài Gòn, tôi lại yêu em. Để giả vờ như chưa một lần gặp gỡ… Vì yêu, đôi khi vẫn là mơ hồ vậy.",
+          "pages": "186",
+          "pdf_url": "https://docs.google.com/uc?id=1cNKxZtfLv_dMGVTOWZxOsn0F3mpyeXqP",
+          "thumbnail": "https://www.dtv-ebook.com/images/files_2/2020/tua-lung-vao-noi-nho-duong-hong-phuc.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Cho Tôi Xin Một Vé Đi Tuổi Thơ",
+          "author": "Nguyễn Nhật Ánh",
+          "description": "Tác phẩm gồm những câu chuyện nhỏ xoay xung quanh 4 đứa trẻ trong cùng một khu xóm là con Tủn, con Tí sún, thằng Hải cò và thằng cu Mùi. Trong đó, người kể chuyện là cu Mùi dưới hình thức kể của 'thằng cu Mùi' lúc bé và nhận xét, đánh giá của 'ông Mùi' khi đã gần 50 tuổi. Song song đó còn có sự xuất hiện của các phụ huynh và những câu chuyện dở khóc dở cười khiến chúng như đang sống lại tuổi thơ tươi đẹp.",
+          "pages": "218",
+          "pdf_url": "https://docs.google.com/uc?id=0B2Ddxco7EoJldTZudFVFNUhnbzA",
+          "thumbnail": "https://www.dtv-ebook.com/images/truyen-online/ebook-Cho-toi-mot-ve-di-tuoi-tho-prc-pdf-epub.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Cẩm Chướng Đỏ",
+          "author": "Bùi Đặng Quốc Thiều",
+          "description": "Con người thường hay trân trọng quá khứ, không phải vì nó đáng quý, mà bởi vì nó không còn tồn tại nữa. Bất kể bạn nỗ lực như thế nào, những giây phút đáng nhớ sẽ chẳng bao giờ cho phép bạn lội ngược dòng và tận hưởng nó một lần nữa, hoặc, có những sự kiện bạn sẽ không thể có cơ hội trải nghiệm vì bạn chưa từng tồn tại ở quãng thời gian đó. Ấy là lúc sách và văn học sẽ giúp ta kết nối giữa không gian, thời gian và những con người. Bạn thấy mình lang thang trong quá khứ không phải để so sánh sự hơn kém giữa các thời đại, mà có thể chỉ để tìm những giá trị đã vô tình bị mất đi theo dòng chảy cuộc sống. Đôi khi, thứ ta thấy trong văn học là sự lãng mạn vô cùng tận, nhưng rõ ràng, sự lãng mạn đó đã từng tồn tại, rất tự nhiên, cho tới khi trái tim con người đóng hẹp lại dần, nhường chỗ cho những điều thực dụng và hợp thời hơn.",
+          "pages": "100",
+          "pdf_url": "https://docs.google.com/uc?id=1n7yRVuX6VokvkiIxDSZr5usi7tqHQG7e",
+          "thumbnail": "https://www.dtv-ebook.com/images/files_2/2021/012021/cam-chuong-do.jpg"
+        }
+      ]
+    }
+  ]
+}
