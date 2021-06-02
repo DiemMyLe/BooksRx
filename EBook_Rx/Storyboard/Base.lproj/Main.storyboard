@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wLS-0J-Isx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hhF-vc-Yz8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="177" width="414" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UYW-fb-xX3">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -26,32 +28,46 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBg-iA-dyV">
+                                <rect key="frame" x="244" y="102" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1K8-ou-szi"/>
+                                    <constraint firstAttribute="height" constant="30" id="UnB-m5-dcs"/>
+                                </constraints>
+                                <state key="normal" title="Delete all">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hhF-vc-Yz8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OiN-qd-w0v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hhF-vc-Yz8" secondAttribute="trailing" id="RgJ-1o-v4l"/>
-                            <constraint firstItem="hhF-vc-Yz8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dMb-eo-M9g"/>
+                            <constraint firstItem="vBg-iA-dyV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="TZi-K5-kEH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vBg-iA-dyV" secondAttribute="trailing" constant="20" id="czF-R8-Xyy"/>
+                            <constraint firstItem="hhF-vc-Yz8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="dMb-eo-M9g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hhF-vc-Yz8" secondAttribute="bottom" id="ec8-BY-zgV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="6X3-GI-hfG">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="house" catalog="system" id="lzF-kr-zlM">
-                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="house" catalog="system" id="ut5-UD-jqt">
+                            <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Delete All Cache" style="plain" id="XuG-8z-GsA">
-                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="books.vertical" catalog="system" id="VPt-g6-OUJ">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnClearCache" destination="XuG-8z-GsA" id="eAj-Ql-64g"/>
+                        <outlet property="btnBooksOffline" destination="VPt-g6-OUJ" id="eDn-EO-xm8"/>
+                        <outlet property="btnClearCache" destination="vBg-iA-dyV" id="dcv-aZ-8l3"/>
                         <outlet property="collectionView" destination="hhF-vc-Yz8" id="z9b-cJ-qRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="103.79464285714285"/>
+            <point key="canvasLocation" x="1939.1304347826087" y="118.52678571428571"/>
         </scene>
         <!--Book List View Controller-->
         <scene sceneID="9Ic-fy-9so">
@@ -63,7 +79,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kNp-pN-0Yy">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zfh-hf-tw9">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -73,14 +89,14 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fhi-Np-ydq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kNp-pN-0Yy" firstAttribute="leading" secondItem="fhi-Np-ydq" secondAttribute="leading" id="0QZ-ZT-q3U"/>
                             <constraint firstItem="fhi-Np-ydq" firstAttribute="bottom" secondItem="kNp-pN-0Yy" secondAttribute="bottom" id="9Z6-ZO-4CF"/>
                             <constraint firstItem="kNp-pN-0Yy" firstAttribute="top" secondItem="fhi-Np-ydq" secondAttribute="top" id="DLb-Zy-2hS"/>
                             <constraint firstItem="fhi-Np-ydq" firstAttribute="trailing" secondItem="kNp-pN-0Yy" secondAttribute="trailing" id="oQ8-JR-TVb"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fhi-Np-ydq"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="kNp-pN-0Yy" id="1Tb-4c-77W"/>
@@ -88,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJj-T6-3Kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771.0144927536232" y="103.79464285714285"/>
+            <point key="canvasLocation" x="2681.1594202898555" y="103.79464285714285"/>
         </scene>
         <!--Book Description View Controller-->
         <scene sceneID="V4Z-gf-CBK">
@@ -134,35 +150,36 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-Fa-P9B">
                                 <rect key="frame" x="20" y="238" width="369" height="474"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-Od-D3n">
                                 <rect key="frame" x="20" y="217" width="369" height="1"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Fv8-wr-hFO"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRR-hC-ETB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRR-hC-ETB">
                                 <rect key="frame" x="20" y="762" width="166" height="30"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Download">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-5r-azq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-5r-azq">
                                 <rect key="frame" x="223" y="762" width="166" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Reading">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tj0-6p-t9E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jUg-95-uCo" firstAttribute="leading" secondItem="XoB-fb-K0A" secondAttribute="trailing" constant="20" id="1S3-Xn-TAw"/>
                             <constraint firstItem="rRR-hC-ETB" firstAttribute="width" secondItem="ZFF-Fa-P9B" secondAttribute="width" multiplier="0.45" id="3rc-Dy-P4N"/>
@@ -190,7 +207,6 @@
                             <constraint firstItem="ZFF-Fa-P9B" firstAttribute="trailing" secondItem="i1w-vz-pvK" secondAttribute="trailing" id="xh2-oa-MOo"/>
                             <constraint firstItem="pYb-Ct-vqG" firstAttribute="width" secondItem="jUg-95-uCo" secondAttribute="width" id="z2h-gb-fTy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tj0-6p-t9E"/>
                     </view>
                     <connections>
                         <outlet property="btnDownload" destination="rRR-hC-ETB" id="jxP-EH-mVt"/>
@@ -204,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKB-iB-48d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.1159420289855" y="103.79464285714285"/>
+            <point key="canvasLocation" x="3476.811594202899" y="103.79464285714285"/>
         </scene>
         <!--Book Detail View Controller-->
         <scene sceneID="jQt-wK-8S0">
@@ -216,17 +232,17 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awW-es-YJQ" customClass="PDFView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xdp-WZ-nwr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xdp-WZ-nwr" firstAttribute="trailing" secondItem="awW-es-YJQ" secondAttribute="trailing" id="H5n-oh-1rT"/>
                             <constraint firstItem="xdp-WZ-nwr" firstAttribute="bottom" secondItem="awW-es-YJQ" secondAttribute="bottom" id="K8j-44-EbX"/>
                             <constraint firstItem="awW-es-YJQ" firstAttribute="top" secondItem="xdp-WZ-nwr" secondAttribute="top" id="fLh-nB-WNs"/>
                             <constraint firstItem="awW-es-YJQ" firstAttribute="leading" secondItem="xdp-WZ-nwr" secondAttribute="leading" id="kh8-Qx-g9N"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xdp-WZ-nwr"/>
                     </view>
                     <connections>
                         <outlet property="pdfView" destination="awW-es-YJQ" id="Kde-Ml-ybh"/>
@@ -234,28 +250,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LC-qg-mbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3422" y="104"/>
+            <point key="canvasLocation" x="4331.884057971015" y="103.79464285714285"/>
+        </scene>
+        <!--Books Offline View Controller-->
+        <scene sceneID="84F-O9-dtR">
+            <objects>
+                <viewController storyboardIdentifier="BooksOfflineViewController" id="Tae-bA-ntn" customClass="BooksOfflineViewController" customModule="EBook_Rx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GyW-fS-Zdr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sMC-TS-gbb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YP6-y8-2EY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sMC-TS-gbb" firstAttribute="top" secondItem="YP6-y8-2EY" secondAttribute="top" id="1Y9-Mf-WGC"/>
+                            <constraint firstItem="YP6-y8-2EY" firstAttribute="trailing" secondItem="sMC-TS-gbb" secondAttribute="trailing" id="OqF-3n-ayg"/>
+                            <constraint firstItem="YP6-y8-2EY" firstAttribute="bottom" secondItem="sMC-TS-gbb" secondAttribute="bottom" id="XF7-aY-ofM"/>
+                            <constraint firstItem="sMC-TS-gbb" firstAttribute="leading" secondItem="YP6-y8-2EY" secondAttribute="leading" id="hhD-Gr-xe3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sMC-TS-gbb" id="tss-V4-KZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alA-4O-Or7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5175" y="98"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1Nk-dT-vzk">
+        <scene sceneID="mJy-hP-DDN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLS-0J-Isx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bQ4-d5-baf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nPM-0O-ZbI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VS2-h2-Yay">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Djp-7m-NQ0"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="80C-jG-qLM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MGP-4k-B1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cS-qs-GVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+            <point key="canvasLocation" x="1028.985507246377" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

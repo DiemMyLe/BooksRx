@@ -12,6 +12,7 @@ protocol Assembler: class,
                     BookListAssembler,
                     BookDescriptionAssembler,
                     BookDetailAssembler,
+                    BooksOfflineAssembler,
                     GatewayAssembler {
     
 }

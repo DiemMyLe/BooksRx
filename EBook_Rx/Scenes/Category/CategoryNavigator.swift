@@ -10,6 +10,7 @@ import UIKit
 
 protocol CategoryNavigatorType {
     func goToBookList(category: Category)
+    func goToBooksOffline()
 }
 
 struct CategoryNavigator: CategoryNavigatorType {
@@ -18,6 +19,11 @@ struct CategoryNavigator: CategoryNavigatorType {
     
     func goToBookList(category: Category) {
         let vc: BookListViewController = assembler.resolve(navigationController: navigationController, category: category)
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func goToBooksOffline() {
+        let vc: BooksOfflineViewController = assembler.resolve(navigationController: navigationController)
         navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -93,10 +93,10 @@ extension BookDescriptionViewController {
     var bindCheckBookExitLocal: Binder<Bool> {
         return Binder(self) { (vc, status) in
             vc.btnDownload.isEnabled = !status
-            vc.btnDownload.backgroundColor = status ? .systemGray5 : .systemOrange
+            vc.btnDownload.backgroundColor = status ? .systemGray5 : AppColor.orageColor
             
             vc.btnReading.isEnabled = status
-            vc.btnReading.backgroundColor = status ? .systemGreen : .systemGray5
+            vc.btnReading.backgroundColor = status ? AppColor.greenColor : .systemGray5
         }
     }
     
