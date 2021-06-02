@@ -1,18 +1,18 @@
 //
-//  BookDetailNavigator.swift
+//  BooksOfflineNavigator.swift
 //  EBook_Rx
 //
-//  Created by le.thi.diem.my on 5/31/21.
+//  Created by le.thi.diem.my on 6/1/21.
 //  Copyright © 2021 DiemMy Le. All rights reserved.
 //
 
 import UIKit
 
-protocol BookDetailNavigatorType {
+protocol BooksOfflineNavigatorType {
     //
 }
 
-struct BookDetailNavigator: BookDetailNavigatorType {
+struct BooksOfflineNavigator: BooksOfflineNavigatorType {
     unowned let assembler: Assembler
     unowned let navigatioController: UINavigationController
 }

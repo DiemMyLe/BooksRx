@@ -15,7 +15,8 @@ import RxCocoa
 class CategoryViewController: UIViewController, Bindable {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var btnClearCache: UIBarButtonItem!
+    @IBOutlet weak var btnClearCache: UIButton!
+    @IBOutlet weak var btnBooksOffline: UIBarButtonItem!
     
     var viewModel: CategoryViewModel!
     var disposeBag = DisposeBag()
@@ -40,7 +41,8 @@ class CategoryViewController: UIViewController, Bindable {
 //                                            selectCategoryTrigger: selectCategoryTrigger.asDriverOnErrorJustComplete())
         let input = CategoryViewModel.Input(loadTrigger: Driver.just(()),
                                             selectCategoryTrigger: collectionView.rx.itemSelected.asDriver(),
-                                            deleteAllBookTrigger: btnClearCache.rx.tap.asDriver())
+                                            deleteAllBookTrigger: btnClearCache.rx.tap.asDriver(),
+                                            loadBooksOffline: btnBooksOffline.rx.tap.asDriver())
         let output = viewModel.transform(input, disposeBag: disposeBag)
         
         output.listCategories
@@ -54,6 +56,9 @@ class CategoryViewController: UIViewController, Bindable {
         output.isDeleteAllBookSuccess
             .drive(bindAlertClearCache)
             .disposed(by: disposeBag)
+        
+        output.goListBooksOffline
+            .drive().disposed(by: disposeBag)
     }
 }
 

@@ -72,31 +72,25 @@ class DBManager {
         }
     }
     
-    // MARK: - DocumentDirectory--------------
-    func deleteABookFromDocumentDirectory(bookID: String) -> Bool {
-        let fileManager = FileManager.default
-        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
-        let documentsPath = documentsUrl.path
+    func deleteABookCache(bookItem: BookItem) -> Bool {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<BookItem>(entityName: "\(Constants.entityBookItem)")
         do {
-            if let documentPath = documentsPath {
-                let fileNames = try fileManager.contentsOfDirectory(atPath: "\(documentPath)")
-                print("all files in cache: \(fileNames)")
-                for fileName in fileNames {
-                    if (fileName.contains("\(bookID)")) {
-                        let filePathName = "\(documentPath)/\(fileName)"
-                        try fileManager.removeItem(atPath: filePathName)
-                    }
-                }
-                let files = try fileManager.contentsOfDirectory(atPath: "\(documentPath)")
-                print("all files in cache after deleting images: \(files)")
-                return true
-            }
+            var listBookItems = try context.fetch(fetchRequest)
+            listBookItems.removeAll { $0.id == bookItem.id }
+            try context.save()
+            print("delete book: \(bookItem.id)")
+            return true
+            
         } catch {
-            print("Could not clear temp folder: \(error)")
+            print("Failed to fetch employees: \(error)")
             return false
         }
-        return false
     }
+    
+    
+    
+    // MARK: - DocumentDirectory--------------
     
     func deleteAllFileDocumentDirectory() -> Bool {
         let fileManager = FileManager.default
@@ -122,6 +116,32 @@ class DBManager {
         }
         return false
     }
+    
+    func deleteABookFromDocumentDirectory(bookItem: BookItem) -> Bool {
+        let fileManager = FileManager.default
+        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
+        let documentsPath = documentsUrl.path
+        do {
+            if let documentPath = documentsPath {
+                let fileNames = try fileManager.contentsOfDirectory(atPath: "\(documentPath)")
+                print("all files in cache: \(fileNames)")
+                for fileName in fileNames {
+                    if (fileName.contains("\(Constants.keySaveBook)\(bookItem.id)")) {
+                        let filePathName = "\(documentPath)/\(fileName)"
+                        try fileManager.removeItem(atPath: filePathName)
+                    }
+                }
+                let files = try fileManager.contentsOfDirectory(atPath: "\(documentPath)")
+                print("all files in cache after deleting images: \(files)")
+                return true
+            }
+        } catch {
+            print("Could not clear temp folder: \(error)")
+            return false
+        }
+        return false
+    }
+    
     
     func getFileDocumentDirectory(fileName: String) -> URL? {
         do {
@@ -177,6 +197,9 @@ class DBManager {
                             bookManaged.title = book.title
                             bookManaged.author = book.author
                             bookManaged.pdfURL = book.pdf_url
+                            bookManaged.urlImageBook = book.thumbnail
+                            bookManaged.pages = book.pages
+                            
                             DBManager.share.saveContext()
                             print("did save: \(book.id)_\(book.title)")
                             
@@ -197,5 +220,26 @@ class DBManager {
             task.resume()
             return Disposables.create()
         }
+    }
+    ///Fetch data
+    func fetchBooks() -> Observable<[BookItem]> {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<BookItem>(entityName: "\(Constants.entityBookItem)")
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: Constants.entityBookItem)
+        
+        return Observable.create { (observer) in
+            do {
+                let listBookItems = try context.fetch(fetchRequest)
+                observer.onNext(listBookItems)
+                observer.onCompleted()
+                
+            } catch {
+                print("Failed to fetch employees: \(error)")
+                observer.onError(error)
+            }
+            
+            return Disposables.create()
+        }
+        
     }
 }

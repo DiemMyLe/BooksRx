@@ -22,12 +22,14 @@ extension CategoryViewModel {
         var loadTrigger: Driver<Void>
         var selectCategoryTrigger: Driver<IndexPath>
         var deleteAllBookTrigger: Driver<Void>
+        var loadBooksOffline: Driver<Void>
     }
     
     struct Output {
         var listCategories: Driver<[Category]>
         var categoryItem: Driver<Category>
         var isDeleteAllBookSuccess: Driver<Bool>
+        var goListBooksOffline: Driver<Void>
     }
     
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
@@ -47,8 +49,14 @@ extension CategoryViewModel {
                 return self.useCase.deleteAllBooks().asDriverOnErrorJustComplete()
             }
         
+        //load books offline
+        let goBooksOffline = input.loadBooksOffline
+            .do { (_) in
+                navigator.goToBooksOffline()
+            }
+        
         return Output(listCategories: listCategories,
                       categoryItem: cateItem,
-                      isDeleteAllBookSuccess: statusDeleteAllBooks)
+                      isDeleteAllBookSuccess: statusDeleteAllBooks, goListBooksOffline: goBooksOffline)
     }
 }

@@ -34,7 +34,7 @@ extension BookDetailAssembler {
 
 extension BookDetailAssembler where Self: DefaultAssembler {
     func resolve(navigationController: UINavigationController) -> BookDetailNavigatorType {
-        return BookDetailNavigator(assembler: self, navigator: navigationController)
+        return BookDetailNavigator(assembler: self, navigatioController: navigationController)
     }
     
     func resolve() -> BookDetailUseCaseType {
